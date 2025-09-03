@@ -39,7 +39,3 @@ print(eye_color)
 print(age)
 
 print(favorite_subject)
-
-birthday = input("When is your birthday?")
-
-print(birthday, "is a great birthday")
