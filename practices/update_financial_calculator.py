@@ -1,24 +1,16 @@
 # AB 7th Update Financial Calculator
 
-def get_expense(name, income):
-    amount = float(input(f"What is your monthly {name}: "))
-    percent = (amount / income) * 100
-    print(f"Your {name} is ${amount:.2f} and that is {percent:.0f}% of your income.")
-    return amount
+def monthly_accounts(other_things):
+    return round(other_things/ income*100,2)
 
-def main():
-    income = float(input("What is your monthly income: "))
+income = 3000
 
-    rent = get_expense("rent/mortgage", income)
-    utilities = get_expense("utilities", income)
-    groceries = get_expense("groceries", income)
-    transportation = get_expense("transportation", income)
+rent_percent = monthly_accounts(1200)
+utilities_percent = monthly_accounts(200)
+groceries = monthly_accounts(250)
+transportation = monthly_accounts(500)
 
-    savings = income * 0.10
-    print(f"\nYou should save ${savings:.2f} a month, that is 10% of your income.")
-
-    total_expenses = rent + utilities + groceries + transportation + savings
-    leftover = income - total_expenses
-    print(f"You have ${leftover:.2f} of spending money each month!")
-
-main()
+print(f"\nYour rent is {rent_percent}% of your income")
+print(f"\nYour utilities is {utilities_percent}% of your income")
+print(f"\nYour rent is {rent_percent}% of your income")
+print(f"\nYour rent is {rent_percent}% of your income")
