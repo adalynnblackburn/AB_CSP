@@ -10,3 +10,5 @@ elif age >= 15 and age < 16:
     print("You are old enough to get a learners permit!")
 elif age >= 4 and age < 15:
     print("You should go to school!")
+else:
+    print("You can't do anything!")
