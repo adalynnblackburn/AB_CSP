@@ -1,13 +1,13 @@
 // AB Update Financial Calculator
 
 #include <stdio.h>
-float stuff(const char *info) {
+float stuff(char *info) {
     float value;
     printf("%s", info);
     scanf("%f", &value);
     return value;
 }
-int print_expense(const char *label, float amount, float income) {
+int print_expense(char *label, float amount, float income) {
     float percent = (amount / income) * 100;
     printf("%s: %.2f which is %.0f percent of your income\n", label, amount, percent);
 }
